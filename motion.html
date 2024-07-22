@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimiento en CSS</title>
+    <link rel="stylesheet" href="css/motion.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <h1>Movimiento en CSS</h1>
+    <hr>
+    <section class="transitions">
+        <h2>Transiciones</h2>
+        <div class="box">
+        </div>
+        <article class="card">
+            <img src="assets/puesta-sol.jpg" alt="">
+        </article>
+    </section>
+    <hr>
+    <section class="transforms">
+        <h2>Transformaciones</h2>
+        <h3>Transformaciones en 2D</h3>
+        <article class="card transform-2d">
+            <img src="assets/puesta-sol.jpg" alt="">
+        </article>
+
+        <h3>Transformaciones en 3D</h3>
+        <article class="card transform-3d">
+            <img src="assets/puesta-sol.jpg" alt="">
+        </article>
+        <h3>Origen de la transformaciòn</h3>
+        <article class="card transform-origin">
+            <img src="assets/puesta-sol.jpg" alt="">
+        </article>
+        <h3>Flip Cards</h3>
+        <article class="flip-card-1">
+            <div class="flip-face flip-front">
+                <img src="assets/puesta-sol.jpg" alt="">
+            </div>
+            <div class="flip-face flip-back">
+                <img src="assets/BuenosDias.jpg" alt="">
+            </div>
+        </article>
+        <article class="flip-card-2">
+            <div class="flip-face flip-front">
+                <img src="assets/puesta-sol.jpg" alt="">
+            </div>
+            <div class="flip-face flip-back">
+                <img src="assets/BuenosDias.jpg" alt="">
+            </div>
+        </article>
+    </section>
+    <hr>
+    <section class="animatios">
+        <h2>Animaciones</h2>
+        <article class="card my-animation">
+            <img src="assets/puesta-sol.jpg" alt="">
+        </article>
+        <article class="card my-animation-2">
+            <img src="assets/puesta-sol.jpg" alt="">
+        </article>
+        <article class="card my-animation-multiple">
+            <img src="assets/puesta-sol.jpg" alt="">
+        </article>
+    </section>
+    <hr>
+    <section class="motion-examples">
+        <h2>Ejemplos de efectos de Movimiento en Css</h2>
+        <h3>FadeIn / FadeOut</h3>
+        <div class="fade-in">😜</div>
+        <div class="fade-out">😎</div>
+        <h3>Sacudir</h3>
+        <div class="shake">👍</div>
+        <h3>Pulsaciones</h3>
+        <div class="pulse">❤️</div>
+        <h3>Dibujando y animando con CSS</h3>
+        <h4>Corazón</h4>
+        <div class="pulse">Eres el CSS de mi HTML </div>
+        <div class="heart"></div>
+        <h4>Spinner / Loader</h4>
+        <div class="spinner"></div>
+        <h3>Botones Animados</h3>
+        <button class="btn anim-bottom to-left">Animacion Izquierda</button>
+        <button class="btn anim-bottom to-center">Animacion Centro</button>
+        <button class="btn anim-bottom to-right">Animacion Derecha</button>
+        <button class="btn anim-bg-gradient">Fondo con gradiente</button>
+        <h3>Menu de pestañas (tabs)</h3>
+        <nav class="tabs-menu">
+            <input type="radio" id="tab-1" name="tabs">
+            <label for="tab-1">Sección 1</label>
+            <input type="radio" id="tab-2" name="tabs">
+            <label for="tab-2">Sección 2</label>
+            <input type="radio" id="tab-3" name="tabs">
+            <label for="tab-3">Sección 3</label>
+            <input type="radio" id="tab-4" name="tabs">
+            <label for="tab-4">Sección 4</label>
+            <div class="tab-bg-hover"></div>
+        </nav>
+        <h3>Menu Off Canvas</h3>
+        <input type="checkbox" class="off-canvas-btn">
+        <label class="off-canvas-burger"></label>
+        <nav class="off-canvas-menu">
+            <div class="off-canvas-menu-container">
+                <a href="" class="off-canvas-link">Seccion 1</a>
+                <a href="" class="off-canvas-link">Seccion 2</a>
+                <a href="" class="off-canvas-link">Seccion 3</a>
+                <a href="" class="off-canvas-link">Seccion 4</a>
+                <a href="" class="off-canvas-link">Seccion 5</a>
+            </div>
+        </nav>
+
+        <h3>Ventana Modal</h3>
+        <a href="#modal-1">Abrir Modal</a>
+        <article id="modal-1" class="modal">
+            <div class="modal-container">
+                <a href="#cerrar" class="modal-close">X</a>
+                <h2>Esto es una ventana modal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odio temporibus perferendis
+                    nulla corrupti a ducimus unde accusamus tempora ipsa corporis qui omnis id asperiores tempore nam
+                    rem, molestias ipsam!</p>
+            </div>
+        </article>
+        <h3>Star Wars Intro</h3>
+        <article class="star-wars">
+            <div class="star-wars-container">
+                <h2>Episode III</h2>
+                <h3>REVENGE OF THE SITH</h3>
+                <p> War! The Republic is crumbling
+                    under attacks by the ruthless
+                    Sith Lord, Count Dooku.
+                    There are heroes on both sides.
+                    Evil is everywhere.</p>
+                <p>
+                    In a stunning move, the
+                    fiendish droid leader, General
+                    Grievous, has swept into the
+                    Republic capital and kidnapped
+                    Chancellor Palpatine, leader of
+                    the Galactic Senate.</p>
+                <p>
+                    As the Separatist Droid Army
+                    attempts to flee the besieged
+                    capital with their valuable
+                    hostage, two Jedi Knights lead a
+                    desperate mission to rescue the
+                    captive Chancellor....</p>
+            </div>
+        </article>
+
+        <div class="padreLogo">
+            <div style="background-color: #222;">
+                <div class="logo">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-windows">
+            <div class="box-container">
+                <div class="bo box-1"></div>
+                <div class="bo box-2"></div>
+                <div class="bo box-3"></div>
+                <div class="bo box-4"></div>
+
+                <p style="color:black;">WINDOWS</p>
+            </div>
+        </div>
+
+
+        <div class="contenedor-flex">
+            <div class="cubo"></div>
+            <div class="cubo"></div>
+            <div class="cubo"></div>
+            <div class="cubo"></div>
+            <div class="cubo"></div>
+        </div>
+
+        <br>
+    </section>
+    <section>
+        <h2 style="color: black;text-align: center;">Juego del Gato</h2>
+        <p id=winner style="color: black;text-align: center;">Ganador:?</p>
+        <div style="display: flex;justify-content: center;">
+            <div class="contenedorGato">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+    <section>
+        <h2 style="color: black;text-align: center;">Tarjeta de Credito</h2>
+
+
+        <div style="display: flex;justify-content: center;">
+
+            <div class="padreTarjeta">
+                <article class="flip-tarjeta-1">
+                    <div class="flip-face flip-front">
+                        <div class="chip">
+                            <img src="assets/chip2.jpg" alt="">
+                        </div>
+                        <div class="visa">
+                            <img src="https://logos-marcas.com/wp-content/uploads/2020/04/Visa-Logotipo-2006%E2%80%932014.png"
+                                alt="">
+                        </div>
+                        <div class="numeros">
+                            <div class="p1">****</div>
+                            <div class="p2">****</div>
+                            <div class="p3">****</div>
+                            <div class="p4">****</div>
+
+                        </div>
+                        <div class="nombre">
+                            <div style="font-size: .6rem; color: gray;">Card Holder</div>
+                            <div id="nombreCard" style="font-size: .7rem;margin-top: 3%;">FULL NAME</div>
+                        </div>
+                        <div class="expira">
+                            <div style="font-size: .6rem; color: gray;">Expiration Date</div>
+                            <div id="expirationCard" style="font-size: .7rem;margin-top: 5%;">MM/YY</div>
+                        </div>
+                    </div>
+                    <div class="flip-face flip-back">
+                        <div class="negro">
+                            <div></div>
+                        </div>
+                        <div class="blanco">
+                            <div class="blanco-p1" style="font-size: 11px; text-align: end;margin-right: 8%;">CVV</div>
+                            <div class="blanco-p2" style="color: black;font-size: 14px; text-align: end;">
+
+                            </div>
+                        </div>
+                        <div class="visaBack">
+                            <img src="https://fantactica.mx/wp-content/uploads/2021/04/visa-and-mastercard-logos-logo-visa-png-logo-visa-mastercard-png-visa-logo-white-png-awesome-logos.png"
+                                alt="">
+                        </div>
+                    </div>
+                </article>
+
+                <div class="row" style="padding: 0 10%; position: relative;top:-20%">
+                    <div class="col-12 ">
+                        <div class="form-group">
+                            <label for="cardNumero" style="color: black;">Card Number:</label>
+                            <input max="9999999999999999" type="text" class="form-control" id="cardNumero">
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="form-group">
+                            <label for="nombreTarjeta" style="color: black;">Card Holders:</label>
+                            <input type="text" class="form-control" id="nombreTarjeta">
+                        </div>
+                    </div>
+
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <label for="ExDate" style="color: black;">Expiration Date:</label>
+                            <select class="form-control" id="ExDate">
+                                <option disabled selected>Seleccionar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <label for="seleccionTarjetaAnio" style="color: black;">&nbsp;</label>
+                            <select id="seleccionTarjetaAnio" class="form-control">
+                                <option disabled selected>Seleccionar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-4 ">
+                        <div class="form-group">
+                            <label for="cvv" style="color: black;">CVV:</label>
+                            <input type="number" class="form-control" max="999" id="cvv">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" onclick="enviar()" style="width: 100%;">Guardar</button>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <a href="index.html#temario">👆🏼</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script>
+        let turno = true
+        let moveArray = new Array(9).fill(null)
+        function win(i, j, k) {
+
+            if (moveArray[i] == moveArray[j] && moveArray[j] == moveArray[k] && moveArray[k] != null) { return true } return false
+
+
+        }
+        let botones = document.querySelectorAll('.contenedorGato button')
+        botones.forEach((btn, index) => {
+            btn.addEventListener('click', evert => {
+                evert.target.textContent = turno ? 'X' : 'O'
+                evert.target.classList.add(turno ? 'X' : 'O')
+                moveArray[index] = turno
+                if (win(0, 1, 2) ||
+                    win(3, 4, 5) ||
+                    win(6, 7, 8) ||
+                    win(0, 3, 6) ||
+                    win(1, 4, 7) ||
+                    win(2, 5, 8) ||
+                    win(0, 4, 8) ||
+                    win(2, 4, 6)) {
+                    let alerta = confirm('Ganador: ' + (turno ? 'X' : 'O'))
+                    document.querySelector('#winner').textContent = 'Ganador: ' + (turno ? 'X' : 'O')
+                    if (alerta || !alerta) {
+                        moveArray = moveArray.fill(null)
+                        botones.forEach(ele => {
+                            ele.textContent = ''
+                            ele.classList.remove('X')
+                            ele.classList.remove('O')
+                        })
+                        document.querySelector('#winner').textContent = 'Ganador: ?'
+
+
+                    }
+                }
+                turno = !turno
+            })
+        })
+
+
+        /*Tarjeta  */
+        let select = document.getElementById('ExDate')
+        let select2 = document.getElementById('seleccionTarjetaAnio')
+        for (let index = 1; index < 13; index++) {
+            const option = document.createElement('option');
+
+            option.value = index < 10 ? '0' + index : index;
+            option.textContent = index;
+            select.appendChild(option);
+        }
+
+        for (let index = 2024; index < 2032; index++) {
+            const option = document.createElement('option');
+            option.value = index;
+            option.textContent = index;
+            select2.appendChild(option);
+        }
+
+
+        let numeroTarjeta = document.getElementById('cardNumero')
+        let numeroCard = document.getElementsByClassName('p1')[0]
+        let numeroCard1 = document.getElementsByClassName('p4')[0]
+        numeroTarjeta.addEventListener('change', event => {
+            let cardNumber = event.target.value.trim()
+            if (event.target.value.length == 16) {
+                numeroCard.innerHTML = cardNumber.slice(0, 4)
+                numeroCard1.innerHTML = cardNumber.slice(-4)
+            }
+        })
+
+
+        let nombreTarjeta = document.getElementById('nombreTarjeta')
+        let nombreCard = document.getElementById('nombreCard')
+        nombreTarjeta.addEventListener('change', event => {
+            nombreCard.innerHTML = event.target.value.toUpperCase()
+        })
+
+        let expirationTarjeta = document.getElementById('ExDate'),
+            seleccionTarjetaMes = document.getElementById('seleccionTarjetaAnio'),
+            seleccionTarjetaAnio = document.getElementById('cvv'),
+            expirationCard = document.getElementById('expirationCard')
+
+
+        let vencimientoMe = 'MM', vencimientoAn = 'YY'
+        expirationTarjeta.addEventListener('change', event => {
+            vencimientoMe = event.target.value
+            expirationCard.innerHTML = vencimientoMe + '/' + vencimientoAn
+        })
+
+        seleccionTarjetaMes.addEventListener('change', event => {
+            vencimientoAn = event.target.value
+            expirationCard.innerHTML = vencimientoMe + '/' + vencimientoAn
+        })
+
+
+        let contenedor = document.getElementsByClassName('flip-tarjeta-1')[0],
+            cvvCard = document.getElementsByClassName('blanco-p2')[0]
+        seleccionTarjetaAnio.addEventListener('focus', event => {
+            contenedor.classList.add('efecto')
+            cvvCard.innerHTML = event.target.value
+        })
+        seleccionTarjetaAnio.addEventListener('blur', event => {
+            contenedor.classList.remove('efecto')
+        })
+        function enviar() {
+            Swal.fire({
+                title: "Good job!",
+                text: "Oficialmente le has bailado con tu ahorros. Gracias por tu coperacha.",
+                icon: "success"
+            }).then(() => {
+                location.reload()
+            })
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

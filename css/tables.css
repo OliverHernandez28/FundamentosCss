@@ -1,0 +1,13 @@
+.table {
+    font-size: 3rem;
+    border: medium solid black;
+    border-collapse: separate;
+    empty-cells: hide;
+}
+
+table,
+th,
+td {
+    border: medium solid black;
+    border-spacing: 10px;
+}

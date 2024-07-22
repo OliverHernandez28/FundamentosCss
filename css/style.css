@@ -1,0 +1,279 @@
+/* Regla de Css consta de 2 partes
+1) el selector 
+2) Bloque de declaraciones{
+ atributo: valor;
+ atributo-de-mas-de-dos-palabras: otro-valor
+} */
+
+@import url('style2.css');
+
+h1 {
+    color: orangered;
+    background-color: black;
+}
+
+/* 
+Selectores Basicos
+1)  Etiquetas- son elementos html
+2) Identificadores - atributos id -#
+3) Clases - atributo css */
+
+p {
+    color: midnightblue;
+}
+
+#parrafo-dos {
+    background-color: skyblue;
+}
+
+/* 
+Estilos con clases */
+
+.text-20 {
+    font-size: 20px;
+}
+
+.text-32 {
+    font-size: 32px;
+}
+
+.bg-skyblue {
+    background-color: skyblue;
+}
+
+.bg-steelblue {
+    background-color: steelblue;
+}
+
+.text-white {
+    color: white;
+}
+
+.hijos-directos>li {
+    background-color: thistle;
+}
+
+.hijos-descendientes b {
+    background-color: thistle;
+}
+
+.hermanos-general~li {
+    background-color: thistle;
+}
+
+.hermanos-adyacente+li {
+    background-color: thistle;
+}
+
+/* 
+selectores de atributo */
+.selectores-atributos a[href] {
+    color: orangered;
+}
+
+.selectores-atributos a[target="_blank"] {
+    font-weight: bold;
+}
+
+.selectores-atributos a[href*="google"] {
+    font-size: 24px;
+}
+
+.selectores-atributos a[href^="https"] {
+    text-decoration: none;
+}
+
+.selectores-atributos a[href$="es"] {
+    background-color: black;
+}
+
+.selectores-atributos a[class~="cursos"] {
+    background-color: midnightblue;
+}
+
+.selectores-atributos a[class|="menu"] {
+    font-style: italic;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+.selector-universal * {
+    font-size: 24px;
+}
+
+.form-pseudoclases *:required {
+    border-color: blue;
+}
+
+.form-pseudoclases *:valid {
+    border-color: green;
+}
+
+.form-pseudoclases *:invalid {
+    border-color: tomato;
+}
+
+.form-pseudoclases *:focus {
+    background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled {
+    background-color: pink;
+}
+
+.menu-pseudoclases a:visited {
+    color: olive;
+}
+
+.menu-pseudoclases a:hover {
+    color: orange;
+}
+
+.p-pseudoclases:hover {
+    font-size: 24px;
+}
+
+#temario:target {
+    background-color: lightgreen;
+}
+
+.lista-pseudoclases li:first-child {
+    color: green;
+}
+
+.lista-pseudoclases li:last-child {
+    color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3) {
+    color: navy;
+}
+
+.lista-pseudoclases li:nth-child(4n) {
+    font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(3n+1) {
+    font-weight: bold;
+}
+
+.lista-pseudoclases li:nth-child(even) {
+    background-color: yellow;
+}
+
+.lista-pseudoclases li:nth-child(odd) {
+    background-color: orange;
+}
+
+.article-pseudoclases p:first-of-type {
+    background-color: pink;
+}
+
+.article-pseudoclases p:last-of-type {
+    background-color: violet;
+}
+
+.article-pseudoclases p:nth-of-type(3) {
+    background-color: fuchsia;
+}
+
+.article-pseudoclases *:not(p) {
+    background-color: beige
+}
+
+
+.edad::before {
+    content: '😎';
+}
+
+.edad::after {
+    content: '😜';
+}
+
+.sueldo::before {
+    content: '$';
+    font-weight: bold;
+}
+
+.sueldo::after {
+    content: 'MXM';
+    font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter {
+    font-weight: bold;
+    font-weight: 32px;
+}
+
+.p-pseudoelementos::first-line {
+    color: coral;
+}
+
+.p-pseudoelementos::selection {
+    color: greenyellow;
+    background-color: black;
+}
+
+.inpút-pseudo-elementos::placeholder {
+    color: green;
+}
+
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+    border-color: yellow;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    border-width: 2px;
+    border-style: dashed;
+
+}
+
+
+
+
+blockquote#cita-marco.cita-marco {
+    background-color: lightsteelblue;
+}
+
+blockquote {
+    background-color: burlywood;
+}
+
+blockquote.cita-marco {
+    background-color: tomato;
+}
+
+.cita-marco {
+    background-color: cornflowerblue;
+}
+
+#cita-marco {
+    background-color: lightgreen;
+}
+
+.cita-marco {
+    background-color: mediumaquamarine !important;
+}
+
+blockquote#cita-marco {
+    background-color: lightsalmon;
+}
+
+.cita-marco {
+    background-color: moccasin !important;
+    font-size: 24px;
+    border: 3px red solid;
+}
+
+
+.cita-marco cite {
+    background-color: pink;
+    background-color: inherit;
+    font-size: unset;
+    border: inherit;
+}

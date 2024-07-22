@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Flexbox Grid Bootstrap</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .flex-item {
+            border: thin solid #CCC;
+            flex: 0 0 100%;
+        }
+
+        /* 
+        @media (min-width: 576px) {
+
+            .flex-item {
+                flex: 0 0 50%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .flex-item {
+                flex: 0 0 33.3333333333333%;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .flex-item {
+                flex: 0 0 25%;
+            }
+        } */
+
+        .titulares {
+            padding: 1rem;
+            background-color: #222;
+            color: #eee;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .menu ul {
+            list-style-type: none;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .menu ul {
+                display: flex;
+            }
+
+            .menu li {
+                padding: .5rem;
+            }
+
+            .flex-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .flex-item {
+                border: none;
+                flex: 0 0 50%;
+            }
+
+            .flex-order-1 {
+                order: 1;
+            }
+        }
+
+        .hero-image {
+            height: 100vh;
+            background-image: url('https://www.shutterstock.com/image-photo/bruges-belgium-panoramic-view-historic-600nw-2175827455.jpg');
+            background-repeat: no-repeat;
+            color: white;
+            background-size: cover;
+        }
+
+        .hero-image div {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(0, 0, 0, .75);
+        }
+
+        .hero-image h2 {
+            font-size: 5vw;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .flex-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .flex-responsive {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .flex-respo-item {
+            border: thin solid #f60;
+            flex: 1 1 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--  <h1>Ejemplos Practicos flexbox</h1> -->
+
+    <header class="titulares header ">
+        <div>Logo</div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Seccion 1</a></li>
+                <li><a href="#">Seccion 2</a></li>
+                <li><a href="#">Seccion 3</a></li>
+                <li><a href="#">Seccion 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contenido</h2>
+        <article class="hero-image">
+            <div>
+                <h2>FlexBlox is fucking COOL</h2>
+            </div>
+
+        </article>
+
+        <section class="flex-container">
+            <article class="flex-item">
+                <h2>Título</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eius facilis ut aperiam minus ab
+                    sunt sed
+                    rerum, commodi deleniti repellat impedit modi excepturi. Quia numquam ex provident quo vero?
+                </p>
+            </article>
+            <article class="flex-item">
+                <img width="400px" height="400px"
+                    src="https://www.shutterstock.com/image-photo/bruges-belgium-panoramic-view-historic-600nw-2175827455.jpg">
+            </article>
+        </section>
+        <section class="flex-container flex-row-reverse">
+            <article class="flex-item ">
+                <h2>Título</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eius facilis ut aperiam minus ab
+                    sunt sed
+                    rerum, commodi deleniti repellat impedit modi excepturi. Quia numquam ex provident quo vero?
+                </p>
+            </article>
+            <article class="flex-item">
+                <img width="400px" height="400px"
+                    src="https://www.shutterstock.com/image-photo/bruges-belgium-panoramic-view-historic-600nw-2175827455.jpg">
+            </article>
+        </section>
+
+
+        <section class="flex-responsive">
+            <article class="flex-respo-item">Item Responsivo 1</article>
+            <article class="flex-respo-item">Item Responsivo 2</article>
+            <article class="flex-respo-item">Item Responsivo 3</article>
+            <article class="flex-respo-item">Item Responsivo 4</article>
+            <article class="flex-respo-item">Item Responsivo 5</article>
+            <article class="flex-respo-item">Item Responsivo 6</article>
+            <article class="flex-respo-item">Item Responsivo 7</article>
+            <article class="flex-respo-item">Item Responsivo 8</article>
+            <article class="flex-respo-item">Item Responsivo 9</article>
+            <article class="flex-respo-item">Item Responsivo 10</article>
+            <article class="flex-respo-item">Item Responsivo 11</article>
+            <article class="flex-respo-item">Item Responsivo 12</article>
+            <article class="flex-respo-item">Item Responsivo 13</article>
+            <article class="flex-respo-item">Item Responsivo 14</article>
+            <article class="flex-respo-item">Item Responsivo 15</article>
+            <article class="flex-respo-item">Item Responsivo 16</article>
+            <article class="flex-respo-item">Item Responsivo 17</article>
+            <article class="flex-respo-item">Item Responsivo 18</article>
+            <article class="flex-respo-item">Item Responsivo 19</article>
+        </section>
+
+    </main>
+    <footer class="titulares">
+        <h2>
+            Sticky Footer
+        </h2>
+    </footer>
+
+
+
+
+    <!--  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>Flexbox Grid Artesanal</h2>
+    <div class="container">
+        <section class="flex-container">
+            <article class="flex-item">Item 1</article>
+            <article class="flex-item">Item 2</article>
+            <article class="flex-item">Item 3</article>
+            <article class="flex-item">Item 4</article>
+            <article class="flex-item">Item 5</article>
+            <article class="flex-item">Item 6</article>
+            <article class="flex-item">Item 7</article>
+            <article class="flex-item">Item 8</article>
+            <article class="flex-item">Item 9</article>
+            <article class="flex-item">Item 10</article>
+            <article class="flex-item">Item 11</article>
+            <article class="flex-item">Item 12</article>
+            <article class="flex-item">Item 13</article>
+            <article class="flex-item">Item 14</article>
+            <article class="flex-item">Item 15</article>
+            <article class="flex-item">Item 16</article>
+            <article class="flex-item">Item 17</article>
+            <article class="flex-item">Item 18</article>
+            <article class="flex-item">Item 19</article>
+        </section>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>Flexbox Grid Bootstrap</h2>
+    <section class="row">
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 1</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 2</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 3</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 4</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 5</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 6</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 7</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 8</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 9</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 10</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 11</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 12</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 13</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 14</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 15</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 16</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 17</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 18</article>
+        <article class="border col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Item 19</article>
+    </section> -->
+
+
+
+
+
+
+
+
+    <a href="index.html#temario">👆🏼</a>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

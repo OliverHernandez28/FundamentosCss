@@ -1,0 +1,41 @@
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    margin: 2rem auto;
+    border: thick solid red;
+}
+
+.border-radius {
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    border-radius: 4rem 3rem 2rem 2rem;
+    border-radius: 2rem;
+}
+
+.border-radius2 {
+    border-radius: 2rem/4rem;
+    border-radius: 2rem 4rem /4rem 8rem;
+}
+
+.border-radius3 {
+    border-radius: 50%;
+}
+
+.border-radius {
+    width: 400px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.outline {
+    color: white;
+    text-align: center;
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: aqua;
+    outline-offset: 3px;
+    outline: 5px solid navy;
+}

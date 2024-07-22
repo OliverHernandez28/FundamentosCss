@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Css</title>
+    <!-- <link rel="stylesheet" href="/css/reset.css"> -->
+
+    <link rel="stylesheet" href="/css/normalize.css ">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <article id="temario">
+        <h1>Aprendiendo Css</h1>
+        <p><i>Cascading Style Sheets</i>- Hojas de Estilo en Cascada</p>
+
+        <h2>Temario del curso</h2>
+        <ul>
+            <li><a href="index.html#selectores-basicos">Selectores Basicos</a></li>
+            <li><a href="index.html#selectores-avanzados">Selectores Avanzados</a></li>
+            <li><a href="index.html#selector-universal">Selectores Avanzados</a></li>
+            <li><a href="index.html#pseudo-clases">PseudoClases</a></li>
+            <li><a href="index.html#pseudo-elementos">PseudoElementos </a></li>
+            <li><a href="index.html#agrupador-selectores">Agrupador de selectores </a></li>
+            <li><a href="index.html#algoritmo-css">Algoritmo Css </a></li>
+            <li><a href="index.html#prefijosNavegadores">Prefijos en los Navegadores </a></li>
+            <li><a href="box-model.html">Modelo Caja </a></li>
+            <li><a href="positions.html">Posicionamiento CSS </a></li>
+            <li><a href="position-examples.html">Ejercicios de posicionamiento CSS </a></li>
+            <li><a href="colors.html">Colores en CSS </a></li>
+            <li><a href="unidades-medida.html">Uniades de Medidda</a></li>
+            <li><a href="variables-functions.html">Variables y Funciones en CSS</a></li>
+            <li><a href="fonts-texts.html">Estilos de fuentes y textos</a></li>
+            <li><a href="bordes-outline.html">Bordes u Outlines</a></li>
+            <li><a href="backgrounds.html">Fondos en CSS</a></li>
+            <li><a href="images.html">Imagenes en CSS</a></li>
+            <li><a href="list-items.html">Listas en CSS</a></li>
+            <li><a href="tables.html">Tablas en CSS</a></li>
+            <li><a href="forms.html">Formularios en CSS</a></li>
+            <li><a href="visual-effects.html">Efectos Visuales en CSS</a></li>
+            <li><a href="scroll-one-page.html">Efectos de Scroll <small>(Sitio One Page)</small></a></li>
+            <li><a href="scroll-snap-slides.html">Ajuste del Scroll (<small>Slides</small> )</a></li>
+            <li><a href="motion.html">Movimiento en CSS</a></li>
+            <li><a href="flexbox.html">Flexbox en CSS</a></li>
+            <li><a href="flexbox-exercises.html">Flexbox en CSS Ejercicios</a></li>
+            <li><a href="flexbox-exercises2.html">Flexbox en CSS Ejercicios 2</a></li>
+            <li><a href="grid.html">Grid CSS</a></li>
+
+        </ul>
+    </article>
+    <hr>
+
+    <article id="selectores-basicos">
+        <h2>Selectores basicos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque unde, nesciunt vel voluptas alias, nisi vero
+            tempora sed, id ipsam non enim aliquam distinctio ipsum! Debitis, natus! Consectetur, similique sint!</p>
+        <p id="parrafo-dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque unde, nesciunt vel voluptas
+            alias, nisi vero
+            tempora sed, id ipsam non enim aliquam distinctio ipsum! Debitis, natus! Consectetur, similique sint!</p>
+        <p class="text-32 bg-skyblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque unde, nesciunt vel
+            voluptas
+            alias, nisi vero
+            tempora sed, id ipsam non enim aliquam distinctio ipsum! Debitis, natus! Consectetur, similique sint!</p>
+        <p class="text-20 bg-steelblue text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque unde,
+            nesciunt vel
+            voluptas
+            alias, nisi vero
+            tempora sed, id ipsam non enim aliquam distinctio ipsum! Debitis, natus! Consectetur, similique sint!</p>
+
+        <p class="text-32 bg-steelblue text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque unde,
+            nesciunt vel
+            voluptas
+            alias, nisi vero
+            tempora sed, id ipsam non enim aliquam distinctio ipsum! Debitis, natus! Consectetur, similique sint!</p>
+        <a href="index.html#temario">👆🏼</a>
+    </article>
+
+    <hr>
+    <article id="selectores-avanzados">
+        <h2>Selectores Avanzados</h2>
+        <h3>Selectores de hijos</h3>
+
+        <h4>Selector de hijos directos</h4>
+        <ul class="hijos-directos">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+
+        <h4>Selectores de hijos descendientes</h4>
+        <ul class="hijos-descendientes">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+
+        <h3>Selectores de hermanos</h3>
+        <h4>Selector de hermanos en General</h4>
+        <ul>
+            <li><b>Primavera</b></li>
+            <li class="hermanos-general"><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+
+        <h4>Selector de hermanos adyacente</h4>
+        <ul>
+            <li><b>Primavera</b></li>
+            <li class="hermanos-adyacente"><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+
+        <h3>Selectores de Atributos</h3>
+        <nav class="selectores-atributos">
+            <ul>
+                <li><a href="https://www.google.com.mx/?hl=es" target="_blank">Inicio</a></li>
+                <li><a class="menu-item cursos button" href="http://www.google.com.mx/?hl" target="_blank">Cursos</a>
+                </li>
+                <li><a href="https://www.google.com.mx/?hl=es" target="_blank">Blog</a></li>
+                <li><a href="https://www.google.com.mx/?hl=es" target="_blank">Notas</a></li>
+                <li><a href="http://www.google.com.mx/?hl=es" target="_blank">CV</a></li>
+                <li><a class="menu-item notas button" href="https://www.google.com.mx/?hl" target="_blank">Notas</a>
+                </li>
+
+                <li><a href="index.html#temario">Temario</a></li>
+            </ul>
+        </nav>
+
+        <a href="index.html#temario">👆🏼</a>
+    </article>
+
+    <hr>
+    <article id="selector-universal">
+        <h2>Selector Universal</h2>
+        <ul class="selector-universal">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <a href="index.html#temario">👆🏼</a>
+    </article>
+    <hr>
+    <article id="pseudo-clases">
+        <h2>Pseudo Clases</h2>
+        <form class="form-pseudoclases">
+            <input name="nombre" placeholder="Escribe tu nombre" type="text" required><br>
+            <input name="correo" placeholder="Escribe tu correo" type="email" required><br>
+            <input disabled type="submit">
+        </form>
+        <nav class="menu-pseudoclases">
+            <a href="#seccion1">Seccion 1</a>
+            <a href="#seccion2">Seccion 2</a>
+            <a href="#seccion3">Seccion 3</a>
+            <a href="#seccion4">Seccion 4</a>
+        </nav>
+        <p class="p-pseudoclases">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro at
+            exercitationem error nobis ipsa
+            optio eum, quis omnis maiores obcaecati ex quisquam modi facilis libero quam veritatis aut alias!</p>
+
+        <ol class="lista-pseudoclases">
+            <li>Cruz Azul</li>
+            <li>America</li>
+            <li>Chivas</li>
+            <li>Atlas </li>
+            <li>Toluca</li>
+            <li>Santos</li>
+            <li>Monterrey</li>
+            <li>Pachuca</li>
+            <li>Tijuana</li>
+            <li>Puebla</li>
+            <li>Pumas</li>
+            <li>Tigres</li>
+        </ol>
+
+        <article class="article-pseudoclases">
+            <header>Esto es un header</header>
+            <p>Esto es un p</p>
+            <div>Esto es un div</div>
+            <p>Esto es un p</p>
+            <section>Esto es una section</section>
+            <p>Esto es un p</p>
+            <div>Esto es un div</div>
+            <p>Esto es un p</p>
+            <footer>Esto es un footer</footer>
+        </article>
+
+        <a href="index.html#temario">👆🏼</a>
+    </article>
+    <hr>
+    <article id="pseudo-elementos">
+        <h2>PseudoElementos</h2>
+        <p>
+            <i>Oliver Hernandez</i><span class="edad">22 Años</span> <span class="sueldo">20,000</span>
+        </p>
+        <p class="p-pseudoelementos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem itaque optio esse
+            tempore ratione minima
+            possimus error ipsa mollitia in sit et quod, aliquid nobis eos assumenda, ad consequuntur vero.</p>
+        <input class="inpút-pseudo-elementos" type="text" name="nombre" placeholder="Escribe tu nombre">
+        <a href="index.html#temario">👆🏼</a>
+        <br>
+    </article>
+    <hr>
+    <article id="agrupador-selectores">
+        <h2>Agrupar Selectores</h2>
+        <form action="" class="form-agrupar-selectores">
+            <input type="text" name="nombre" placeholder="Escribe tu nombre">
+            <input type="email" name="correo" placeholder="Escribe tu correo">
+            <textarea placeholder="Escribe tus comentarios" cols="30" rows="10" name="comentarios"></textarea>
+            <input type="submit">
+        </form>
+        <a href="index.html#temario">👆🏼</a>
+    </article>
+
+    <hr>
+    <article id="algoritmo-css">
+        <h2>Algoritmo Css</h2>
+        <ul>
+            <li>La Cáscada</li>
+            <li>La Especificidad</li>
+            <li>La Herencia</li>
+        </ul>
+        <blockquote id="cita-marco" class="cita-marco" style="background-color: rebeccapurple;">
+            Se tolerante con los demás y estricto contigo mismo - <cite>Marco Aurelio</cite>
+        </blockquote>
+        <a href="index.html#temario">👆🏼</a>
+    </article>
+    <hr>
+    <article id="prefijosNavegadores">
+
+        <h2>Prefijo en los navegadores</h2>
+        <ul>
+            <li>Navegadores de Microsoft <code><b>-ms-</b></code></li>
+            <li>Firefox <code><b>-moz-</b></code></li>
+            <li>Todos los demas navegadores <code><b>-webkit-</b></code> </li>
+        </ul>
+        <a href="index.html#temario">👆🏼</a>
+    </article>
+    <hr>
+    <hr>
+    <article id="prefijosNavegadores">
+        <a href="index.html#temario">👆🏼</a>
+    </article>
+    <hr>
+
+
+
+</body>
+
+</html>

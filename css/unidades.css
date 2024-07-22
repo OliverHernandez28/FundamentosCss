@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+    background-color: black;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: burlywood;
+    margin: 0;
+}
+
+.pixeles {
+    background-color: cadetblue;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    font-size: 32px;
+    border: thick solid rebeccapurple;
+}
+
+.ems {
+    background-color: cadetblue;
+    border: thick solid rebeccapurple;
+    font-size: 2em;
+    padding: 1em 0.5em;
+    border: 5px solid rebeccapurple;
+}
+
+/* Se basa en el tamaño de fuente del elemento padre. */
+.em-child {
+    background-color: salmon;
+    border: thin solid beige;
+    padding: 1em;
+    font-size: 2m;
+}
+
+.rems {
+    background-color: cadetblue;
+    border: thick solid rebeccapurple;
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+    border: 5px solid rebeccapurple;
+}
+
+
+/*Se basa en el tamaño de fuente del elemento raíz (<html>).  */
+.rem-child {
+    background-color: salmon;
+    border: thin solid beige;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.exs {
+    background-color: cadetblue;
+    border: thick solid rebeccapurple;
+    font-size: 2rem;
+    padding: 1ex 0.5ex;
+    border: 5px solid rebeccapurple;
+}
+
+.ex-child {
+    background-color: salmon;
+    border: thin solid beige;
+    padding: 1ex;
+    font-size: 2ex;
+}
+
+.chs {
+    background-color: cadetblue;
+    border: 5px solid rebeccapurple;
+    width: 10ch;
+}
+
+.percentages {
+    background-color: darkkhaki;
+    width: 80%;
+}
+
+
+.height-parent {
+    background-color: brown;
+    width: 500px;
+    height: 500px;
+}
+
+.height-child {
+    background-color: coral;
+    width: 50%;
+    height: 50%;
+}
+
+.viewport {
+    background-color: darkcyan;
+    /* Recuerda que la etiqueta body tiene margenes por defecto y recuerda que las barras de scroll del navegador tambien forman parte del viewport  */
+    width: 100vw;
+    height: 100vh;
+    font-size: 2vw;
+}
+
+.vmin,
+.vmax {
+    background-color: darksalmon;
+    border: thick solid cyan;
+    width: 50vmax;
+    height: 50vmin;
+}

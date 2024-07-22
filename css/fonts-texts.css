@@ -1,0 +1,98 @@
+/* 
+Estilos de la fuente
+font-family : familia tipografica
+font-size : tamaño de la fuente
+font-weight : grosor de la tipografia
+font-style : tipo de estilo cursiva,etc.
+font-variant : variante de la fuente smallcaps hace mas pequeño todo pero en minusculas
+line-height: interlineado
+font: todo junto seria un shorthand
+*/
+
+.font {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-variant: small-caps;
+    line-height: 1.5;
+    font: italic small-caps bold 24px/1.5 monospace;
+}
+
+/* 
+Formato woff o woff2-  Web Open Font Format
+*/
+@font-face {
+    font-family: "Chalet";
+    src: url('../assets/Chalet.woff')format("woff");
+    font-display: swap;
+}
+
+.chalet {
+    font-family: "Chalet", sans-serif;
+    font-size: 2rem;
+}
+
+@font-face {
+    font-family: "Pecita";
+    src: url('../assets/Pecita.woff')format('woff');
+}
+
+.pecita {
+    font-family: 'Pecita', cursive;
+    font-size: 2rem;
+    font-display: swap;
+}
+
+/* Esta se importo desde link ya que es de google */
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+}
+
+/* 
+text-align: Indica a donde alinear el texto
+text-decoration: Es agregarle una decoracion al texto como subrayado, italica o algo.
+text-indent: Permite la identacion a la linea con la que inicia.
+text-overflow: Permite que si no cabe el texto ponga puntos suspensivos. Para ello es necesario agregar 2 propiedades overflow:hidden y white.space:nowrap
+text-transform : NOs permiste modificar a mayusculas o minusculas todo el texto
+
+letter-spacing : espacio entre cada letra
+white-space: Indica que hacer con los espacios en blanco 
+
+word-break: romper la palabra si no cabe en su campo
+word-spacing: indica que hacer con los espacios pero entre cada palabra
+writing-mode: permite decir como se leera el texto si vertica o horizontal
+*/
+.text {
+    font-size: 2rem;
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration: none;
+    text-indent: 1rem;
+    text-transform: none;
+    letter-spacing: 1rem;
+    word-break: keep-all;
+    writing-mode: vertical-lr;
+}
+
+
+.text-overflow {
+    font-size: 2rem;
+    background-color: blanchedalmond;
+    border: thing solid black;
+    padding: 1rem;
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.white-space {
+    white-space: pre;
+}
+
+.word-spacing {
+    font-size: 2rem;
+    word-spacing: 1rem;
+}

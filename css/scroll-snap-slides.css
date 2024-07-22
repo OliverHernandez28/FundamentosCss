@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+    font-family: 16px;
+    font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+.slides {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.slide {
+    width: 100%;
+    height: inherit;
+    background-color: #1e2345;
+    scroll-snap-align: center;
+}
+
+
+.slide:nth-child(even) {
+    background-color: #108eb4;
+}
+
+.slide-container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    color: #d9e8f0;
+}
+
+.carousel {
+    border: thick solid #d938f0;
+    width: 50%;
+    height: 50vh;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.carousel-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 50%);
+    overflow: scroll hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #108eb4;
+    scroll-snap-align: center;
+}
+
+.carousel-slide:nth-child(even) {
+    background-color: #1e2345;
+}
+
+.gradient-text {
+    background-image: linear-gradient(45deg, magenta, yellow);
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /*  text-fill-color: transparent; */
+    -ms-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.contenedor {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-image: linear-gradient(45deg, cyan, magenta) 1 / 5px stretch;
+    background-color: black;
+}
+
+.hijo {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
